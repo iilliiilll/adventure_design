@@ -5,6 +5,7 @@ public class Huffman {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         System.out.println("Huffman Test Start\n");
         HuffmanTest.main(args);
+        HuffmanGUI.main(args);
     }
 }
 

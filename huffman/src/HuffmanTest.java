@@ -8,7 +8,7 @@ public class HuffmanTest {
         fileHandler fileHandler = new fileHandler();
         HuffmanTree huffmanTree = new HuffmanTree();
 
-        Map<Character, Integer> freqMap = fileHandler.calFreq("input.txt"); // 문자:빈도 Map 얻기
+        Map<Character, Integer> freqMap = fileHandler.calFreq("resources/input.txt"); // 문자:빈도 Map 얻기
         Node root = huffmanTree.buildTree(freqMap); // 문자:빈도 Map 으로 허프만 트리 생성
         Map<Character, String> huffmanCodeMap = huffmanTree.getHuffmanCode(root); // 문자:코드 Map 얻기
 
@@ -45,11 +45,11 @@ public class HuffmanTest {
 
     private static void printTime(fileHandler fileHandler, Node root, Map<Character, String> huffmanCodeMap) throws IOException, ClassNotFoundException {
         long compressStart = System.currentTimeMillis();
-        fileHandler.compressFile("input.txt", "compressed.bin", huffmanCodeMap);
+        fileHandler.compressFile("resources/input.txt", "resources/compressed.bin", huffmanCodeMap);
         long compressEnd = System.currentTimeMillis();
 
         long decompressStart = System.currentTimeMillis();
-        fileHandler.decompressFile("compressed.bin", "output.txt", root);
+        fileHandler.decompressFile("resources/compressed.bin", "resources/output.txt", root);
         long decompressEnd = System.currentTimeMillis();
 
         System.out.println("----- TEST 2 -----");

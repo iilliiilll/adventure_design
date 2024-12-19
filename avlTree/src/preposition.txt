@@ -1,0 +1,13 @@
+on
+in
+by
+until
+for
+during
+to
+for
+from
+under
+behind
+after
+before

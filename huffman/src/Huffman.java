@@ -3,6 +3,9 @@ import java.util.*;
 
 public class Huffman {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
+        // 테스트 파일 만들기
+        MakeTestFile.main(args);
+
         System.out.println("Huffman Test Start\n");
         HuffmanTest.main(args);
         HuffmanGUI.main(args);

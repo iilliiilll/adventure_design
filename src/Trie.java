@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Project_14_2 {
+public class Trie {
 
     static final int ALPHA_SIZE = 26;
 
